@@ -11,10 +11,10 @@ namespace Antra
         private string pavadinimas;
         private double kaina;
 
-        public void gautiDaiktas(string Pavadinimas,double Kaina)
+        public void gautiDaiktas(string pavadinimas,double Kaina)
         {
             this.kaina = Kaina;
-            this.pavadinimas = Pavadinimas;
+            this.pavadinimas = pavadinimas;
         }
     }
 }
