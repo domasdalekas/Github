@@ -20,8 +20,7 @@ namespace Antra
         public Parduotuvė()
         {
             InitializeComponent();
-            ImageList imageList = new ImageList();
-            var image = new Bitmap(@"deer1.jpg");
+           
          
         }
         private void Parduotuvė_Load(object sender, EventArgs e)
