@@ -61,6 +61,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="DaiktoForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaiktoForma.Designer.cs">
+      <DependentUpon>DaiktoForma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ginklas.cs" />
     <Compile Include="PamirstasSlaptazodis.cs">
       <SubType>Form</SubType>
@@ -88,6 +94,9 @@
     <Compile Include="Registracija.Designer.cs">
       <DependentUpon>Registracija.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DaiktoForma.resx">
+      <DependentUpon>DaiktoForma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

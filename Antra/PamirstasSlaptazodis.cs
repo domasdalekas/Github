@@ -42,7 +42,7 @@ namespace Antra
                 {
                     MessageBox.Show("Išsiusta į el.paštą "+ pastas);
 
-                    this.Close();
+                    
                 }
                 else
                 {

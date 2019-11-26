@@ -6,37 +6,24 @@ using System.Threading.Tasks;
 
 namespace Antra
 {
+    public enum GinkloTipas
+    {
+        Graiztvinis,
+        Lygiavamzdis,
+        Sovinys
+    }
+
+
     class Ginklas : Daiktas
     {
-        private string tipas;
+        public GinkloTipas Tipas { get; }
+        public string Kalibras { get; }
 
-
-        private string kalibras;
-
-        public Ginklas()
+        public Ginklas(string pavadinimas, double kaina, GinkloTipas tipas, string kalibras) : base(pavadinimas, kaina)
         {
-            pavadinimas = "";
-            kaina = 0.0;
-            tipas = "";
-            kalibras = "";
+            this.Tipas = tipas;
+            this.Kalibras = kalibras;    
         }
-        public void SetTipas(string tipas)
-        {
-            if (tipas != null)
-                this.tipas = tipas;
-        }
-        public string GetTipas()
-        {
-            return tipas;
-        }
-        public void SetKalibras(string kalibras)
-        {
-            if (kalibras != null)
-                this.kalibras = kalibras;
-        }
-        public string GetKalibras()
-        {
-            return kalibras;
-        }
+        
     }
 }
