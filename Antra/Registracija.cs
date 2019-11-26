@@ -16,6 +16,8 @@ namespace Antra
         public Registracija()
         {
             InitializeComponent();
+            Image image = new Bitmap(@"Paveiksliukas4.jpg");
+            this.BackgroundImage = image;
         }
         private bool TikrintiDuomenis(string vardas,string pavarde,string pastas,string slaptazodis,string slaptazodis1) 
         {

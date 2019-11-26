@@ -37,9 +37,10 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(104, 155);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(85, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Prisijungti";
             this.button1.UseVisualStyleBackColor = true;
@@ -50,11 +51,12 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 17);
+            this.label1.Size = new System.Drawing.Size(78, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "El.Paštas";
             // 
@@ -63,7 +65,8 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label2.Location = new System.Drawing.Point(12, 52);
             this.label2.Name = "label2";
@@ -74,17 +77,18 @@
             // prisijungimoVardasTextBox
             // 
             this.prisijungimoVardasTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.prisijungimoVardasTextBox.Location = new System.Drawing.Point(78, 6);
+            this.prisijungimoVardasTextBox.Location = new System.Drawing.Point(96, 6);
             this.prisijungimoVardasTextBox.Name = "prisijungimoVardasTextBox";
             this.prisijungimoVardasTextBox.Size = new System.Drawing.Size(162, 20);
             this.prisijungimoVardasTextBox.TabIndex = 4;
             // 
             // prisijungimoSlaptazodisTextBox
             // 
-            this.prisijungimoSlaptazodisTextBox.Location = new System.Drawing.Point(78, 49);
+            this.prisijungimoSlaptazodisTextBox.Location = new System.Drawing.Point(96, 49);
             this.prisijungimoSlaptazodisTextBox.Name = "prisijungimoSlaptazodisTextBox";
             this.prisijungimoSlaptazodisTextBox.Size = new System.Drawing.Size(162, 20);
             this.prisijungimoSlaptazodisTextBox.TabIndex = 5;
+            this.prisijungimoSlaptazodisTextBox.UseSystemPasswordChar = true;
             // 
             // Prisijungimas
             // 

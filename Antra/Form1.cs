@@ -25,9 +25,8 @@ namespace Antra
         private void PrisijungimasButton_Click(object sender, EventArgs e)
         {
             Prisijungimas prisijungimas = new Prisijungimas();
-            Form1 f1 = new Form1();
-            f1.Close();
             prisijungimas.ShowDialog();
+            
         }
 
         private void RegistracijaButton_Click(object sender, EventArgs e)
@@ -38,8 +37,7 @@ namespace Antra
 
         private void PamirstasSlaptazodis_Click(object sender, EventArgs e)
         {
-            PamirstasSlaptazodis pamirstasSlaptazodis = new PamirstasSlaptazodis();
-            pamirstasSlaptazodis.ShowDialog();
+            
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -52,7 +50,8 @@ namespace Antra
 
         private void PamirstasSlaptazodis_Click_1(object sender, EventArgs e)
         {
-
+            PamirstasSlaptazodis ps = new PamirstasSlaptazodis();
+            ps.ShowDialog();
         }
 
     }

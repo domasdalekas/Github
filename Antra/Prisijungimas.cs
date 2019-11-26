@@ -13,9 +13,12 @@ namespace Antra
 {
     public partial class Prisijungimas : Form
     {
+        bool prisijungtaok = false;
         public Prisijungimas()
         {
             InitializeComponent();
+            Image image = new Bitmap(@"Paveiksliukas3.jpg");
+            this.BackgroundImage = image;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -37,9 +40,13 @@ namespace Antra
                 }
                 if (c == 1)
                 {
-                    MessageBox.Show("Prisijungtass");
+                   
                     
                     this.Close();
+                    Form1 f1 = new Form1();
+
+                    f1.Close();
+                    prisijungtaok = true;
                 }
                 else
                 {
@@ -60,7 +67,12 @@ namespace Antra
             }
             finally
             {
-                if (dbconnection.State == System.Data.ConnectionState.Open)
+                if (prisijungtaok == true)
+                {
+                    Parduotuvė prisijungta = new Parduotuvė();
+                    
+                    prisijungta.Show();
+                }
                     dbconnection.Close();
             }
         }

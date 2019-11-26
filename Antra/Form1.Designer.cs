@@ -33,7 +33,7 @@ namespace Antra
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.prisijungimasButton = new System.Windows.Forms.Button();
             this.registracijaButton = new System.Windows.Forms.Button();
-            this.pamirstasSlaptazodis = new System.Windows.Forms.Button();
+            this.pamirstasSlaptazodisButton = new System.Windows.Forms.Button();
             this.iseitiButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -64,19 +64,19 @@ namespace Antra
             this.registracijaButton.UseVisualStyleBackColor = false;
             this.registracijaButton.Click += new System.EventHandler(this.RegistracijaButton_Click);
             // 
-            // pamirstasSlaptazodis
+            // pamirstasSlaptazodisButton
             // 
-            this.pamirstasSlaptazodis.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.pamirstasSlaptazodis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.pamirstasSlaptazodis.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.pamirstasSlaptazodis.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.pamirstasSlaptazodis.Location = new System.Drawing.Point(123, 79);
-            this.pamirstasSlaptazodis.Name = "pamirstasSlaptazodis";
-            this.pamirstasSlaptazodis.Size = new System.Drawing.Size(111, 52);
-            this.pamirstasSlaptazodis.TabIndex = 3;
-            this.pamirstasSlaptazodis.Text = "Pamiršote slaptažodį?";
-            this.pamirstasSlaptazodis.UseVisualStyleBackColor = false;
-            this.pamirstasSlaptazodis.Click += new System.EventHandler(this.PamirstasSlaptazodis_Click_1);
+            this.pamirstasSlaptazodisButton.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.pamirstasSlaptazodisButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.pamirstasSlaptazodisButton.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.pamirstasSlaptazodisButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.pamirstasSlaptazodisButton.Location = new System.Drawing.Point(123, 79);
+            this.pamirstasSlaptazodisButton.Name = "pamirstasSlaptazodisButton";
+            this.pamirstasSlaptazodisButton.Size = new System.Drawing.Size(111, 52);
+            this.pamirstasSlaptazodisButton.TabIndex = 3;
+            this.pamirstasSlaptazodisButton.Text = "Pamiršote slaptažodį?";
+            this.pamirstasSlaptazodisButton.UseVisualStyleBackColor = false;
+            this.pamirstasSlaptazodisButton.Click += new System.EventHandler(this.PamirstasSlaptazodis_Click_1);
             // 
             // iseitiButton
             // 
@@ -111,7 +111,7 @@ namespace Antra
             this.ClientSize = new System.Drawing.Size(486, 253);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.iseitiButton);
-            this.Controls.Add(this.pamirstasSlaptazodis);
+            this.Controls.Add(this.pamirstasSlaptazodisButton);
             this.Controls.Add(this.registracijaButton);
             this.Controls.Add(this.prisijungimasButton);
             this.Name = "Form1";
@@ -125,7 +125,7 @@ namespace Antra
 
         private System.Windows.Forms.Button prisijungimasButton;
         private System.Windows.Forms.Button registracijaButton;
-        private System.Windows.Forms.Button pamirstasSlaptazodis;
+        private System.Windows.Forms.Button pamirstasSlaptazodisButton;
         private System.Windows.Forms.Button iseitiButton;
         private Label label1;
     }
