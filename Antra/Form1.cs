@@ -26,13 +26,14 @@ namespace Antra
         {
             Prisijungimas prisijungimas = new Prisijungimas();
             prisijungimas.ShowDialog();
-            
+            this.Hide();
         }
 
         private void RegistracijaButton_Click(object sender, EventArgs e)
         {
             Registracija registracija = new Registracija();
             registracija.ShowDialog();
+            this.Hide();
         }
 
         private void PamirstasSlaptazodis_Click(object sender, EventArgs e)
@@ -52,6 +53,7 @@ namespace Antra
         {
             PamirstasSlaptazodis ps = new PamirstasSlaptazodis();
             ps.ShowDialog();
+            this.Hide();
         }
 
     }

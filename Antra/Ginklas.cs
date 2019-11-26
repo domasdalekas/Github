@@ -8,14 +8,35 @@ namespace Antra
 {
     class Ginklas : Daiktas
     {
-        private string tipas { get; set; }
-       
-        private string kalibras { get; set; }
+        private string tipas;
 
-        public void gautiGinkla(string Tipas, string Kalibras)
+
+        private string kalibras;
+
+        public Ginklas()
         {
-            this.tipas = Tipas;
-            this.kalibras = Kalibras;
+            pavadinimas = "";
+            kaina = 0.0;
+            tipas = "";
+            kalibras = "";
+        }
+        public void SetTipas(string tipas)
+        {
+            if (tipas != null)
+                this.tipas = tipas;
+        }
+        public string GetTipas()
+        {
+            return tipas;
+        }
+        public void SetKalibras(string kalibras)
+        {
+            if (kalibras != null)
+                this.kalibras = kalibras;
+        }
+        public string GetKalibras()
+        {
+            return kalibras;
         }
     }
 }

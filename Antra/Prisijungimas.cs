@@ -40,12 +40,7 @@ namespace Antra
                 }
                 if (c == 1)
                 {
-                   
                     
-                    this.Close();
-                    Form1 f1 = new Form1();
-
-                    f1.Close();
                     prisijungtaok = true;
                 }
                 else
@@ -55,11 +50,6 @@ namespace Antra
                     
           }
          
-
-
-                
-
-            
             catch ( Exception ex)
             {
                 Console.WriteLine(ex.Message);
@@ -69,9 +59,15 @@ namespace Antra
             {
                 if (prisijungtaok == true)
                 {
-                    Parduotuvė prisijungta = new Parduotuvė();
+
                     
+                    this.Hide();
+                    Parduotuvė prisijungta = new Parduotuvė();
                     prisijungta.Show();
+
+
+
+
                 }
                     dbconnection.Close();
             }

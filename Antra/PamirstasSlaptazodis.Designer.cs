@@ -38,7 +38,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 19);
+            this.label1.Location = new System.Drawing.Point(3, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 14);
             this.label1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // PamirstasSlaptazodisText
             // 
-            this.PamirstasSlaptazodisText.Location = new System.Drawing.Point(79, 17);
+            this.PamirstasSlaptazodisText.Location = new System.Drawing.Point(70, 17);
             this.PamirstasSlaptazodisText.Name = "PamirstasSlaptazodisText";
             this.PamirstasSlaptazodisText.Size = new System.Drawing.Size(100, 20);
             this.PamirstasSlaptazodisText.TabIndex = 1;
@@ -54,7 +54,7 @@
             // PamirstaslaptazodisButton
             // 
             this.PamirstaslaptazodisButton.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.PamirstaslaptazodisButton.Location = new System.Drawing.Point(94, 103);
+            this.PamirstaslaptazodisButton.Location = new System.Drawing.Point(81, 182);
             this.PamirstaslaptazodisButton.Name = "PamirstaslaptazodisButton";
             this.PamirstaslaptazodisButton.Size = new System.Drawing.Size(75, 23);
             this.PamirstaslaptazodisButton.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(264, 138);
+            this.ClientSize = new System.Drawing.Size(240, 217);
             this.Controls.Add(this.PamirstaslaptazodisButton);
             this.Controls.Add(this.PamirstasSlaptazodisText);
             this.Controls.Add(this.label1);

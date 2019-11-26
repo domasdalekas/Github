@@ -8,13 +8,32 @@ namespace Antra
 {
     class Daiktas
     {
-        private string pavadinimas;
-        private double kaina;
+        protected string pavadinimas;
+        protected double kaina;
 
-        public void gautiDaiktas(string pavadinimas,double kaina)
+        public Daiktas()
         {
+            pavadinimas = "";
+            kaina = 0.0;
+        }
+        public void SetPavadinima(string pavadinimas)
+        {
+            if (pavadinimas != null)
+                this.pavadinimas = pavadinimas;
+        }
+        public string GetPavadinima()
+        {
+            return pavadinimas;
+        }
+        public void SetKaina(double kaina)
+        {
+
             this.kaina = kaina;
-            this.pavadinimas = pavadinimas;
+        }  
+        
+        public double GetKaina()
+        {
+            return kaina;
         }
     }
 }

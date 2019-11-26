@@ -38,7 +38,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(104, 155);
+            this.button1.Location = new System.Drawing.Point(148, 164);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 23);
             this.button1.TabIndex = 0;
@@ -56,7 +56,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 17);
+            this.label1.Size = new System.Drawing.Size(130, 26);
             this.label1.TabIndex = 2;
             this.label1.Text = "El.Paštas";
             // 
@@ -70,21 +70,21 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label2.Location = new System.Drawing.Point(12, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 17);
+            this.label2.Size = new System.Drawing.Size(130, 26);
             this.label2.TabIndex = 3;
             this.label2.Text = "Slaptažodis";
             // 
             // prisijungimoVardasTextBox
             // 
             this.prisijungimoVardasTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.prisijungimoVardasTextBox.Location = new System.Drawing.Point(96, 6);
+            this.prisijungimoVardasTextBox.Location = new System.Drawing.Point(148, 8);
             this.prisijungimoVardasTextBox.Name = "prisijungimoVardasTextBox";
             this.prisijungimoVardasTextBox.Size = new System.Drawing.Size(162, 20);
             this.prisijungimoVardasTextBox.TabIndex = 4;
             // 
             // prisijungimoSlaptazodisTextBox
             // 
-            this.prisijungimoSlaptazodisTextBox.Location = new System.Drawing.Point(96, 49);
+            this.prisijungimoSlaptazodisTextBox.Location = new System.Drawing.Point(148, 50);
             this.prisijungimoSlaptazodisTextBox.Name = "prisijungimoSlaptazodisTextBox";
             this.prisijungimoSlaptazodisTextBox.Size = new System.Drawing.Size(162, 20);
             this.prisijungimoSlaptazodisTextBox.TabIndex = 5;
@@ -94,7 +94,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(287, 190);
+            this.ClientSize = new System.Drawing.Size(378, 199);
             this.Controls.Add(this.prisijungimoSlaptazodisTextBox);
             this.Controls.Add(this.prisijungimoVardasTextBox);
             this.Controls.Add(this.label2);

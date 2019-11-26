@@ -17,7 +17,7 @@ namespace Antra
         public PamirstasSlaptazodis()
         {
             InitializeComponent();
-            Image image = new Bitmap(@"Paveiksliukas4.jpg");
+            Image image = new Bitmap(@"Pav54.jpg");
             this.BackgroundImage = image;
         }
 
