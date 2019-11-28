@@ -53,6 +53,7 @@ namespace Antra
             dbconnection.Close();
            SQLiteConnection dbconnection1 = new SQLiteConnection(@"Data Source=C:\Users\Domas\Desktop\Github\Antra\Failai\Drabuziai.db");
             dbconnection1.Open();
+            //Skaityti Drabuzius
             SkaitytiDrabuzius(dbconnection1);
             dbconnection1.Close();
             SQLiteConnection dbconnection2 = new SQLiteConnection(@"Data Source=C:\Users\Domas\Desktop\Github\Antra\Failai\Prietaisai.db");
