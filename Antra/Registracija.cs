@@ -16,7 +16,7 @@ namespace Antra
         public Registracija()
         {
             InitializeComponent();
-            Image image = new Bitmap(@"Paveiksliukas4.jpg");
+            Image image = new Bitmap(@"C:\Users\Domas\Desktop\Github\Antra\Failai\Paveiksliukas4.jpg");
             this.BackgroundImage = image;
         }
         private bool TikrintiDuomenis(string vardas,string pavarde,string pastas,string slaptazodis,string slaptazodis1) 
@@ -61,7 +61,7 @@ namespace Antra
         private void RegistruotisClick_Click(object sender, EventArgs e)
         {
             
-            SQLiteConnection dbConnection  = new SQLiteConnection(@"Data Source=Vartotojai.db");
+            SQLiteConnection dbConnection  = new SQLiteConnection(@"Data Source=C:\Users\Domas\Desktop\Github\Antra\Failai\Vartotojai.db");
            
             try
             {

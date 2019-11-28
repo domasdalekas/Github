@@ -17,13 +17,13 @@ namespace Antra
         public PamirstasSlaptazodis()
         {
             InitializeComponent();
-            Image image = new Bitmap(@"Pav54.jpg");
+            Image image = new Bitmap(@"C:\Users\Domas\Desktop\Github\Antra\Failai\Pav54.jpg");
             this.BackgroundImage = image;
         }
 
         private void PamirstaslaptazodisButton_Click(object sender, EventArgs e)
         {
-            SQLiteConnection dbconnection = new SQLiteConnection(@"Data Source=Vartotojai.db");
+            SQLiteConnection dbconnection = new SQLiteConnection(@"Data Source=C:\Users\Domas\Desktop\Github\Antra\Failai\Vartotojai.db");
 
             try
             {

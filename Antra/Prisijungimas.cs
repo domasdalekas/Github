@@ -17,13 +17,13 @@ namespace Antra
         public Prisijungimas()
         {
             InitializeComponent();
-            Image image = new Bitmap(@"Paveiksliukas3.jpg");
+            Image image = new Bitmap(@"C:\Users\Domas\Desktop\Github\Antra\Failai\Paveiksliukas3.jpg");
             this.BackgroundImage = image;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SQLiteConnection dbconnection = new SQLiteConnection(@"Data Source=Vartotojai.db");
+            SQLiteConnection dbconnection = new SQLiteConnection(@"Data Source=C:\Users\Domas\Desktop\Github\Antra\Failai\Vartotojai.db");
             
             try
             {

@@ -113,21 +113,21 @@
             // lygiavamzdžiaiToolStripMenuItem
             // 
             this.lygiavamzdžiaiToolStripMenuItem.Name = "lygiavamzdžiaiToolStripMenuItem";
-            this.lygiavamzdžiaiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lygiavamzdžiaiToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.lygiavamzdžiaiToolStripMenuItem.Text = "Lygiavamzdžiai";
             this.lygiavamzdžiaiToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.lygiavamzdziaiItemClicked);
             // 
             // graižtviniaiToolStripMenuItem
             // 
             this.graižtviniaiToolStripMenuItem.Name = "graižtviniaiToolStripMenuItem";
-            this.graižtviniaiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.graižtviniaiToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.graižtviniaiToolStripMenuItem.Text = "Graižtviniai";
             this.graižtviniaiToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.graiztviniaiItemClicked);
             // 
             // šaudmenysToolStripMenuItem
             // 
             this.šaudmenysToolStripMenuItem.Name = "šaudmenysToolStripMenuItem";
-            this.šaudmenysToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.šaudmenysToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.šaudmenysToolStripMenuItem.Text = "Šaudmenys";
             this.šaudmenysToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.saudmenysItemClicked);
             // 
@@ -146,18 +146,21 @@
             this.striukėsToolStripMenuItem.Name = "striukėsToolStripMenuItem";
             this.striukėsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.striukėsToolStripMenuItem.Text = "Striukės";
+            this.striukėsToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.AprangaDropDownClicked);
             // 
             // kelnėsToolStripMenuItem
             // 
             this.kelnėsToolStripMenuItem.Name = "kelnėsToolStripMenuItem";
             this.kelnėsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.kelnėsToolStripMenuItem.Text = "Kelnės";
+            this.kelnėsToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.kelnesDropDownClicked);
             // 
             // kepurėsToolStripMenuItem
             // 
             this.kepurėsToolStripMenuItem.Name = "kepurėsToolStripMenuItem";
             this.kepurėsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.kepurėsToolStripMenuItem.Text = "Kepurės";
+            this.kepurėsToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.KepuresDownClicked);
             // 
             // optiniaiPrietaisaiToolStripMenuItem
             // 
@@ -174,18 +177,21 @@
             this.optiniaiTaikikliaiToolStripMenuItem.Name = "optiniaiTaikikliaiToolStripMenuItem";
             this.optiniaiTaikikliaiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.optiniaiTaikikliaiToolStripMenuItem.Text = "Optiniai taikikliai";
+            this.optiniaiTaikikliaiToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.OptiniaiTaikikliaiDropDown);
             // 
             // žiūronaiToolStripMenuItem
             // 
             this.žiūronaiToolStripMenuItem.Name = "žiūronaiToolStripMenuItem";
             this.žiūronaiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.žiūronaiToolStripMenuItem.Text = "Žiūronai";
+            this.žiūronaiToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ZiuronaiDropDown);
             // 
             // termovizoriaiToolStripMenuItem
             // 
             this.termovizoriaiToolStripMenuItem.Name = "termovizoriaiToolStripMenuItem";
             this.termovizoriaiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.termovizoriaiToolStripMenuItem.Text = "Termovizoriai";
+            this.termovizoriaiToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.TermovizoriaiDropDown);
             // 
             // priedaiMedžiokleiToolStripMenuItem
             // 
@@ -202,18 +208,21 @@
             this.apsaugosGinklųVamzdžiamsToolStripMenuItem.Name = "apsaugosGinklųVamzdžiamsToolStripMenuItem";
             this.apsaugosGinklųVamzdžiamsToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
             this.apsaugosGinklųVamzdžiamsToolStripMenuItem.Text = "Apsaugos ginklų vamzdžiams";
+            this.apsaugosGinklųVamzdžiamsToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ApsaugosDropDown);
             // 
             // kuprinėsToolStripMenuItem
             // 
             this.kuprinėsToolStripMenuItem.Name = "kuprinėsToolStripMenuItem";
             this.kuprinėsToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
             this.kuprinėsToolStripMenuItem.Text = "Kuprinės";
+            this.kuprinėsToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.KuprinesDropDown);
             // 
             // prožektoriaiToolStripMenuItem
             // 
             this.prožektoriaiToolStripMenuItem.Name = "prožektoriaiToolStripMenuItem";
             this.prožektoriaiToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
             this.prožektoriaiToolStripMenuItem.Text = "Prožektoriai";
+            this.prožektoriaiToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ProzektoriuDropDown);
             // 
             // imageList1
             // 

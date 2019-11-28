@@ -16,7 +16,7 @@ namespace Antra
         public Form1()
         {
             InitializeComponent();
-            Image image = new Bitmap(@"Paveiksliukas1.jpg");
+            Image image = new Bitmap(@"C:\Users\Domas\Desktop\Github\Antra\Failai\paveiksliukas1.jpg");
             this.BackgroundImage = image;
 
         }

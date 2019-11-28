@@ -55,17 +55,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Daiktas.cs" />
+    <Compile Include="Drabuzis.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DaiktoForma.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DaiktoForma.Designer.cs">
-      <DependentUpon>DaiktoForma.cs</DependentUpon>
     </Compile>
     <Compile Include="Ginklas.cs" />
     <Compile Include="PamirstasSlaptazodis.cs">
@@ -74,6 +69,8 @@
     <Compile Include="PamirstasSlaptazodis.Designer.cs">
       <DependentUpon>PamirstasSlaptazodis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Priedai.cs" />
+    <Compile Include="Prietaisas.cs" />
     <Compile Include="Prisijungimas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,9 +91,6 @@
     <Compile Include="Registracija.Designer.cs">
       <DependentUpon>Registracija.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DaiktoForma.resx">
-      <DependentUpon>DaiktoForma.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
