@@ -59,6 +59,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.kiekisTextbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.listViewKrepselis = new System.Windows.Forms.ListView();
+            this.pasalintiButton = new System.Windows.Forms.Button();
+            this.sumosText = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ginkloPictureBox)).BeginInit();
@@ -144,21 +148,21 @@
             // striukėsToolStripMenuItem
             // 
             this.striukėsToolStripMenuItem.Name = "striukėsToolStripMenuItem";
-            this.striukėsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.striukėsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.striukėsToolStripMenuItem.Text = "Striukės";
             this.striukėsToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.AprangaDropDownClicked);
             // 
             // kelnėsToolStripMenuItem
             // 
             this.kelnėsToolStripMenuItem.Name = "kelnėsToolStripMenuItem";
-            this.kelnėsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kelnėsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.kelnėsToolStripMenuItem.Text = "Kelnės";
             this.kelnėsToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.kelnesDropDownClicked);
             // 
             // kepurėsToolStripMenuItem
             // 
             this.kepurėsToolStripMenuItem.Name = "kepurėsToolStripMenuItem";
-            this.kepurėsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kepurėsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.kepurėsToolStripMenuItem.Text = "Kepurės";
             this.kepurėsToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.KepuresDownClicked);
             // 
@@ -175,21 +179,21 @@
             // optiniaiTaikikliaiToolStripMenuItem
             // 
             this.optiniaiTaikikliaiToolStripMenuItem.Name = "optiniaiTaikikliaiToolStripMenuItem";
-            this.optiniaiTaikikliaiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.optiniaiTaikikliaiToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.optiniaiTaikikliaiToolStripMenuItem.Text = "Optiniai taikikliai";
             this.optiniaiTaikikliaiToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.OptiniaiTaikikliaiDropDown);
             // 
             // žiūronaiToolStripMenuItem
             // 
             this.žiūronaiToolStripMenuItem.Name = "žiūronaiToolStripMenuItem";
-            this.žiūronaiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.žiūronaiToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.žiūronaiToolStripMenuItem.Text = "Žiūronai";
             this.žiūronaiToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ZiuronaiDropDown);
             // 
             // termovizoriaiToolStripMenuItem
             // 
             this.termovizoriaiToolStripMenuItem.Name = "termovizoriaiToolStripMenuItem";
-            this.termovizoriaiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.termovizoriaiToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.termovizoriaiToolStripMenuItem.Text = "Termovizoriai";
             this.termovizoriaiToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.TermovizoriaiDropDown);
             // 
@@ -305,11 +309,50 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Kiekis";
             // 
+            // listViewKrepselis
+            // 
+            this.listViewKrepselis.HideSelection = false;
+            this.listViewKrepselis.Location = new System.Drawing.Point(549, 62);
+            this.listViewKrepselis.MultiSelect = false;
+            this.listViewKrepselis.Name = "listViewKrepselis";
+            this.listViewKrepselis.Size = new System.Drawing.Size(223, 183);
+            this.listViewKrepselis.TabIndex = 13;
+            this.listViewKrepselis.UseCompatibleStateImageBehavior = false;
+            // 
+            // pasalintiButton
+            // 
+            this.pasalintiButton.Location = new System.Drawing.Point(684, 260);
+            this.pasalintiButton.Name = "pasalintiButton";
+            this.pasalintiButton.Size = new System.Drawing.Size(88, 47);
+            this.pasalintiButton.TabIndex = 14;
+            this.pasalintiButton.Text = "Pašalinti iš krepšelio";
+            this.pasalintiButton.UseVisualStyleBackColor = true;
+            // 
+            // sumosText
+            // 
+            this.sumosText.Location = new System.Drawing.Point(549, 275);
+            this.sumosText.Name = "sumosText";
+            this.sumosText.Size = new System.Drawing.Size(100, 20);
+            this.sumosText.TabIndex = 15;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(546, 248);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Suma";
+            // 
             // Parduotuvė
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 588);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.sumosText);
+            this.Controls.Add(this.pasalintiButton);
+            this.Controls.Add(this.listViewKrepselis);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.kiekisTextbox);
             this.Controls.Add(this.button2);
@@ -365,5 +408,9 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox kiekisTextbox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListView listViewKrepselis;
+        private System.Windows.Forms.Button pasalintiButton;
+        private System.Windows.Forms.TextBox sumosText;
+        private System.Windows.Forms.Label label2;
     }
 }

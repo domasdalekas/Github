@@ -348,10 +348,5 @@ namespace Antra
         {
             RodydiPriedoInformacija(e);
         }
-
-        private void PasalintiButton_Click(object sender, EventArgs e)
-        {
-            listViewKrepselis.SelectedItems[0].Remove();
-        }
     }
 }
