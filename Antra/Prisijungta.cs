@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.IO;
 
 namespace Antra
 {
@@ -18,18 +19,23 @@ namespace Antra
         private Dictionary<string, Prietaisas> priestaisuDictionary { get; } = new Dictionary<string, Prietaisas>();
         private Dictionary<string, Priedai> prieduDictionary { get; } = new Dictionary<string, Priedai>();
 
-        private List<Daiktas> krepselis = new List<Daiktas>();
+        List<Daiktas> daiktas = new List<Daiktas>();
 
         public Parduotuvė()
         {
             InitializeComponent();
-           
-         
+
+
         }
         private void Parduotuvė_Load(object sender, EventArgs e)
         {
             GetDaiktusMenu();
-           
+            listViewKrepselis.View = View.Details;
+            listViewKrepselis.Columns.Add("Pavadinimas", 100);
+            this.listViewKrepselis.Columns.Add("Kaina", 70);
+            this.listViewKrepselis.Columns.Add("Kiekis", 70);
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,36 +47,39 @@ namespace Antra
 
         }
 
-        
+
         private void GetDaiktusMenu()
         {
+            string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
 
-            SQLiteConnection dbconnection = new SQLiteConnection(@"Data Source=C:\Users\Domas\Desktop\Github\Antra\Failai\Medziokles.db");
+
+
+            SQLiteConnection dbconnection = new SQLiteConnection(@"Data Source=Medziokles.db");
             dbconnection.Open();
 
             // Skaityti Ginklus
             SkaitytiGinklus(dbconnection);
             dbconnection.Close();
-           SQLiteConnection dbconnection1 = new SQLiteConnection(@"Data Source=C:\Users\Domas\Desktop\Github\Antra\Failai\Drabuziai.db");
+            SQLiteConnection dbconnection1 = new SQLiteConnection(@"Data Source=Drabuziai.db");
             dbconnection1.Open();
             //Skaityti Drabuzius
             SkaitytiDrabuzius(dbconnection1);
             dbconnection1.Close();
-            SQLiteConnection dbconnection2 = new SQLiteConnection(@"Data Source=C:\Users\Domas\Desktop\Github\Antra\Failai\Prietaisai.db");
+            SQLiteConnection dbconnection2 = new SQLiteConnection(@"Data Source=Prietaisai.db");
             dbconnection2.Open();
             SkaitytiPrietaisus(dbconnection2);
             dbconnection2.Close();
-            SQLiteConnection dbconnection3 = new SQLiteConnection(@"Data Source=C:\Users\Domas\Desktop\Github\Antra\Failai\Priedai.db");
+            SQLiteConnection dbconnection3 = new SQLiteConnection(@"Data Source=Priedai.db");
             dbconnection3.Open();
             SkaitytiPriedus(dbconnection3);
             dbconnection2.Close();
         }
-        
+
 
         private void ginklaiToolStripMenuItem1_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-          
-            
+
+
         }
 
         private void lygiavamzdziaiItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -105,7 +114,7 @@ namespace Antra
                 double kaina = Convert.ToDouble(reader.GetValue(3));
 
                 Ginklas ginklas = new Ginklas(pavadinimas, kaina, tipas, kalibras);
-                
+
                 ginkluDictionary.Add(pavadinimas, ginklas);
 
                 switch (tipas)
@@ -121,9 +130,9 @@ namespace Antra
                         break;
 
                 }
-                
-                
-                
+
+
+
             }
         }
         private void SkaitytiDrabuzius(SQLiteConnection connection)
@@ -232,11 +241,11 @@ namespace Antra
             kalibrasLable.Text = pasirinktasGinklas.Kalibras;
             kainosTextBox.Text = Convert.ToString(pasirinktasGinklas.Kaina);
             var paveiksliukoPavadinimas = pasirinktasGinklas.Pavadinimas + ".jpg";
-            ginkloPictureBox.Image = new Bitmap(@"C:\Users\Domas\Desktop\Github\Antra\Failai\"+paveiksliukoPavadinimas);
+            ginkloPictureBox.Image = new Bitmap(paveiksliukoPavadinimas);
             ginkloPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
 
         }
-       void RodytiDrabuzioInformacija(ToolStripItemClickedEventArgs e)
+        void RodytiDrabuzioInformacija(ToolStripItemClickedEventArgs e)
         {
             string paspaustasPavadinimas = e.ClickedItem.Text;
             Drabuzis pasirinktasdrabuzis = drabuziuDictionary[paspaustasPavadinimas];
@@ -244,18 +253,18 @@ namespace Antra
             kalibrasLable.Text = pasirinktasdrabuzis.Dydis;
             kainosTextBox.Text = Convert.ToString(pasirinktasdrabuzis.Kaina);
             var paveiksliukoPavadinimas = pasirinktasdrabuzis.Pavadinimas + ".jpg";
-            ginkloPictureBox.Image = new Bitmap(@"C:\Users\Domas\Desktop\Github\Antra\Failai\" + paveiksliukoPavadinimas);
+            ginkloPictureBox.Image = new Bitmap(paveiksliukoPavadinimas);
             ginkloPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
         }
         void RodytiPrietaisoInformacija(ToolStripItemClickedEventArgs e)
         {
             string paspaustasPavadinimas = e.ClickedItem.Text;
-           Prietaisas pasirinktasprietaisas = priestaisuDictionary[paspaustasPavadinimas];
+            Prietaisas pasirinktasprietaisas = priestaisuDictionary[paspaustasPavadinimas];
             pavadinimasLabel.Text = pasirinktasprietaisas.Pavadinimas;
-            kalibrasLable.Text = pasirinktasprietaisas.Priartinimas + " " +pasirinktasprietaisas.Diametras;
+            kalibrasLable.Text = pasirinktasprietaisas.Priartinimas + " " + pasirinktasprietaisas.Diametras;
             kainosTextBox.Text = Convert.ToString(pasirinktasprietaisas.Kaina);
             var paveiksliukoPavadinimas = pasirinktasprietaisas.Pavadinimas + ".jpg";
-            ginkloPictureBox.Image = new Bitmap(@"C:\Users\Domas\Desktop\Github\Antra\Failai\" + paveiksliukoPavadinimas);
+            ginkloPictureBox.Image = new Bitmap(paveiksliukoPavadinimas);
             ginkloPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
         }
         void RodydiPriedoInformacija(ToolStripItemClickedEventArgs e)
@@ -266,11 +275,27 @@ namespace Antra
             kalibrasLable.Text = Convert.ToString(pasirinktasprietaisas.Tipas);
             kainosTextBox.Text = Convert.ToString(pasirinktasprietaisas.Kaina);
             var paveiksliukoPavadinimas = pasirinktasprietaisas.Pavadinimas + ".jpg";
-            ginkloPictureBox.Image = new Bitmap(@"C:\Users\Domas\Desktop\Github\Antra\Failai\" + paveiksliukoPavadinimas);
+            ginkloPictureBox.Image = new Bitmap(paveiksliukoPavadinimas);
             ginkloPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            string pavadinimas = pavadinimasLabel.Text;
+            double kaina = Convert.ToDouble(kainosTextBox.Text);
+            double suma = 0;
+            Daiktas daiktai = new Daiktas(pavadinimas, kaina);
+            daiktas.Add(daiktai);
+            listViewKrepselis.Items.Clear();
+            foreach (Daiktas dat in daiktas)
+            {
+                string[] filler = new string[2];
+                filler[0] = dat.Kaina.ToString();
+                filler[1] = kiekisTextbox.Text;
+                listViewKrepselis.Items.Add(dat.Pavadinimas).SubItems.AddRange(filler);
+            }
+            listViewKrepselis.GridLines = true;
+            suma += daiktai.Kaina;
+            sumosText.Text = Convert.ToString(suma);
 
         }
 
@@ -322,6 +347,11 @@ namespace Antra
         private void ProzektoriuDropDown(object sender, ToolStripItemClickedEventArgs e)
         {
             RodydiPriedoInformacija(e);
+        }
+
+        private void PasalintiButton_Click(object sender, EventArgs e)
+        {
+            listViewKrepselis.SelectedItems[0].Remove();
         }
     }
 }
